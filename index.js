@@ -1,11 +1,6 @@
-function sum(arr) {
-  const max = Math.max(arr[0], arr[1]);
-  const min = Math.min(arr[0], arr[1]);
-  let res = 0;
-  for (let i = min; i <= max; i++) {
-    res += i;
-  }
-  return res;
+function isPalindrome(str){
+ return str.split('').every((char, i ) =>  char === str[str.length - i -1])
 }
 
-console.log(sum([1, 5]));
+
+console.log(isPalindrome("nitin"));
